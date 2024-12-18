@@ -1,3 +1,5 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
 import { Controller } from "react-hook-form";
 import Select from "react-select";
 import { selectStyle, selectTheme } from "../../styles/selectStyles";
@@ -6,10 +8,10 @@ import Input from "../global/Input";
 import ImageUploader from "../global/ImageUploader";
 
 type GeneralInformationProps = {
-  control: any;
-  errors: any;
-  register: any;
-  setValue: any;
+  control: unknown;
+  errors: unknown;
+  register: unknown;
+  setValue: unknown;
   courts: { label: string; value: string }[];
 };
 

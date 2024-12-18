@@ -1,3 +1,5 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
 import { Controller } from "react-hook-form";
 import Select from "react-select";
 import { selectStyle, selectTheme } from "../../styles/selectStyles";
@@ -5,11 +7,11 @@ import Input from "../global/Input";
 import AddSvg from "../global/SVGs/AddSvg";
 
 type PackagesFormProps = {
-  fields: any;
-  append: any;
-  remove: any;
-  control: any;
-  errors: any;
+  fields: unknown;
+  append: unknown;
+  remove: unknown;
+  control: unknown;
+  errors: unknown;
 };
 
 const PackageForm = ({

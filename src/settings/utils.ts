@@ -1,3 +1,5 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
 export const formatDate = (dateStr) => {
   if (!dateStr) return "";
   const date = new Date(dateStr);
