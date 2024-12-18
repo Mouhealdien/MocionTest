@@ -34,7 +34,7 @@ const SideBar = ({ sidebarOpen, setSidebarOpen }: propsType) => {
             </button>
           </div>
 
-          <CoachForm />
+          <CoachForm setSidebarOpen={setSidebarOpen} />
         </div>
       </aside>
     </div>

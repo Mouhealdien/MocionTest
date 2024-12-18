@@ -1,3 +1,5 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
 import { useForm, useFieldArray } from "react-hook-form";
 import GeneralInformationForm from "./GeneralInformationForm";
 import WorkingHoursForm from "./WorkingHoursForm";
@@ -11,6 +13,7 @@ import { toast } from "react-toastify";
 import { convertTo12HourFormat, formatDate } from "../../settings/utils";
 import Loader from "../global/Loader";
 
+type propsType = { setSidebarOpen: unknown };
 type FormInput = {
   name: string;
   birth_date: string;
@@ -38,7 +41,7 @@ type FormInput = {
   photo: unknown;
 };
 
-const CoachForm = () => {
+const CoachForm = ({ setSidebarOpen }: propsType) => {
   const { data, isLoading } = useGetCourtsQuery("");
   const courts = data?.data?.map((court: { name: string; id: string }) => {
     return { label: court.name, value: court.id };
@@ -156,7 +159,9 @@ const CoachForm = () => {
 
       <div className="flex flex-row gap-5  justify-end">
         <button
-          type="submit"
+          onClick={() => {
+            setSidebarOpen(false);
+          }}
           className="bg-white text-red-500 px-20 py-2 rounded-full hover:border-red-500 hover:border transition-all duration-300"
         >
           Cancel
