@@ -1,5 +1,3 @@
-import React from "react";
-
 const CreateSvg = () => {
   return (
     <svg
