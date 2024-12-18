@@ -1,8 +1,7 @@
 {
   "files": [],
   "compilerOptions": {
-    "noEmitOnError": false,
-    "strict": true
+    "skipLibCheck": true
   },
   "references": [
     { "path": "./tsconfig.app.json" },
